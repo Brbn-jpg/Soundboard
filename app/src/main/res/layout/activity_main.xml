@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/szary"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/fioletowy"
+                android:elevation="4dp"
+                android:textAlignment="center"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:title="Soundboard boży"
+                app:titleTextColor="@color/white"
+                tools:ignore="MissingConstraints" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <Button
+            android:id="@+id/btnIgoMeow"
+            android:layout_width="95dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="48dp"
+            android:drawableTop="@drawable/igomeow"
+            android:text="I Go Meow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+        <Button
+            android:id="@+id/btnPedro"
+            android:layout_width="95dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="28dp"
+            android:drawableTop="@drawable/pedro"
+            android:text="Pedro"
+            app:layout_constraintEnd_toStartOf="@+id/btnExplosive"
+            app:layout_constraintStart_toEndOf="@+id/btnIgoMeow"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+        <Button
+            android:id="@+id/btnExplosive"
+            android:layout_width="95dp"
+            android:drawableTop="@drawable/kupa"
+            android:layout_height="103dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="40dp"
+            android:text="Fart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+        <Button
+            android:id="@+id/btnFreddy"
+            android:layout_width="95dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="FREDDY"
+            android:drawableTop="@drawable/freddy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnIgoMeow" />
+
+        <Button
+            android:id="@+id/btnSkibidi"
+            android:layout_width="95dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="28dp"
+            android:drawableTop="@drawable/skibidi"
+            android:text="Skibidi"
+            app:layout_constraintEnd_toStartOf="@+id/btnWylaczTo"
+            app:layout_constraintStart_toEndOf="@+id/btnFreddy"
+            app:layout_constraintTop_toBottomOf="@+id/btnPedro" />
+
+        <Button
+            android:id="@+id/btnWylaczTo"
+            android:drawableTop="@drawable/jasperwylaczto"
+            android:layout_width="95dp"
+            android:layout_height="103dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:text="wylacz to"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnExplosive" />
+
+        <Button
+            android:id="@+id/btnSmiechJasper"
+            android:drawableTop="@drawable/jaspersmiech"
+            android:layout_width="95dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Smiech"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFreddy" />
+
+        <Button
+            android:id="@+id/btnKabel"
+            android:layout_width="95dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="28dp"
+            android:drawableTop="@drawable/jasperkabel"
+            android:text="kabel"
+            app:layout_constraintEnd_toStartOf="@+id/btnDoDupy"
+            app:layout_constraintStart_toEndOf="@+id/btnSmiechJasper"
+            app:layout_constraintTop_toBottomOf="@+id/btnSkibidi" />
+
+        <Button
+            android:id="@+id/btnDoDupy"
+            android:layout_width="95dp"
+            android:layout_height="103dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:drawableTop="@drawable/gdzieidziesz"
+            android:text="do dupy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnWylaczTo" />
+
+        <Button
+            android:id="@+id/btnEpicWin"
+            android:layout_width="95dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:drawableTop="@drawable/jasperepicwin"
+            android:text="Epic Win"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSmiechJasper" />
+
+        <Button
+            android:id="@+id/btnMetalPipe"
+            android:layout_width="95dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="28dp"
+            android:drawableTop="@drawable/metalpipe"
+            android:text="metal pipe"
+            app:layout_constraintEnd_toStartOf="@+id/btnHeeHeeHeeHaw"
+            app:layout_constraintStart_toEndOf="@+id/btnEpicWin"
+            app:layout_constraintTop_toBottomOf="@+id/btnKabel" />
+
+        <Button
+            android:id="@+id/btnHeeHeeHeeHaw"
+            android:layout_width="95dp"
+            android:layout_height="103dp"
+            android:drawableTop="@drawable/heeheeheehaw"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:text="hee haw"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDoDupy" />
+
+        <Button
+            android:id="@+id/btnSonar"
+            android:layout_width="95dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:drawableTop="@drawable/sonar"
+            android:text="Sonar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnEpicWin" />
+
+        <Button
+            android:id="@+id/btnAmogus"
+            android:layout_width="95dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="28dp"
+            android:drawableTop="@drawable/amogus"
+            android:text="amogus"
+            app:layout_constraintEnd_toStartOf="@+id/btnMajorKrzyczy"
+            app:layout_constraintStart_toEndOf="@+id/btnSonar"
+            app:layout_constraintTop_toBottomOf="@+id/btnMetalPipe" />
+
+        <Button
+            android:id="@+id/btnMajorKrzyczy"
+            android:layout_width="95dp"
+            android:layout_height="103dp"
+            android:layout_marginTop="20dp"
+            android:drawableTop="@drawable/majorkrzyczy"
+            android:layout_marginEnd="40dp"
+            android:text="OOOOOO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnHeeHeeHeeHaw" />
+
+        <Button
+            android:id="@+id/btnProszeNiePrzeklinac"
+            android:layout_width="95dp"
+            android:drawableTop="@drawable/majorproszenieprzeklinac"
+            android:layout_height="103dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="nie przeklinać"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSonar" />
+
+        <Button
+            android:id="@+id/btnPanieBozy"
+            android:drawableTop="@drawable/majorbozy"
+            android:layout_width="95dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="28dp"
+            android:text="panie bozy"
+            app:layout_constraintEnd_toStartOf="@+id/btnJuzZaczynasz"
+            app:layout_constraintStart_toEndOf="@+id/btnProszeNiePrzeklinac"
+            app:layout_constraintTop_toBottomOf="@+id/btnAmogus" />
+
+        <Button
+            android:id="@+id/btnJuzZaczynasz"
+            android:layout_width="95dp"
+            android:layout_height="103dp"
+            android:drawableTop="@drawable/majorjuzzaczynasz"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:text="już zaczynasz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMajorKrzyczy" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
